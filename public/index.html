@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+      	<meta charset="UTF-8" />
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+            <style type="text/css">
+                  #preloader{width:100%;height:100%;min-height:100vh;margin:0;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-image:url(/img/bg_green.jpg);background-size:contain;background-repeat:repeat;z-index:1600;position:fixed;overflow:hidden}.wrapper{position:relative;width:300px;height:300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.wrapper .loader-circle{width:60%;height:60%;border-radius:50%;border:30px solid transparent;border-left-color:#fff;-webkit-animation:preloader .9s ease-in-out alternate infinite;animation:preloader .9s ease-in-out alternate infinite}.wrapper .loader-bottom{position:absolute;width:100%;height:50%;top:50%;text-align:center;color:#fff;font-weight:700;-webkit-animation:progress .45s linear alternate infinite;animation:progress .45s linear alternate infinite}@-webkit-keyframes preloader{0%{-webkit-transform:rotate(-35deg);transform:rotate(-35deg)}18%{border-width:18px}50%{border-width:4px}82%{border-width:18px}100%{-webkit-transform:rotate(215deg);transform:rotate(215deg)}}@keyframes preloader{0%{-webkit-transform:rotate(-35deg);transform:rotate(-35deg)}18%{border-width:18px}50%{border-width:4px}82%{border-width:18px}100%{-webkit-transform:rotate(215deg);transform:rotate(215deg)}}@-webkit-keyframes progress{0%{color:#fff}100%{color:rgba(255,255,255,0.5)}}@keyframes progress{0%{color:#fff}100%{color:rgba(255,255,255,0.5)}}
+            </style>
+
+
+      	<link rel="stylesheet" href="css/bootstrap.css" />
+      	<link rel="stylesheet" href="css/style.css" />
+      	<title>Impression</title>
+      </head>
+	<body class="main_garden">
+      <div id="preloader">
+            <div class="wrapper">
+              <div class="loader-circle"></div>
+              <div class="loader-bottom">LOADING</div>
+            </div>
+      </div>
+     <div class="container">
+      <div id="button_block_container" class="container menu_container ">
+        <p id="about_us" class="btn btn-primary">?</p>
+                <p class="menu_button select first_state_menu">Pick one <img class="menu_arrow" src="img/arrow.png" alt="garden"></p>           
+                <p id="pickone" class="menu_button">Pull a weed</p>
+            <p id="plant" class="menu_button">Plant a flower</p>
+            <p id="pickup" class="menu_button">Pick up trash</p>
+            <p id="litter_button" class="menu_button">Litter</p>
+           </div>
+    </div>
+   
+
+
+<img id ="bg_image_dirty" class="initial_state" src="img/dirty_bg.jpg" alt="garden">
+
+   <div class="container dirty_garden_container" id="dirty_garden_game">	 
+     <img id="item1" class="garden_image plants ivy1 " src="img/plants/1.png" alt="garden">       
+       <img id="item2"class="garden_image plants ivy2" src="img/plants/1.png" alt="garden">
+       <img id="item3"class="garden_image plants ivy3" src="img/plants/2.png" alt="garden">
+       <img id="item4"class="garden_image plants ivy4" src="img/plants/3.png" alt="garden">
+       <img id="item5"class="garden_image plants ivy5" src="img/plants/3.png" alt="garden">
+       <img id="item6"class="garden_image plants grass1" src="img/plants/4.png" alt="garden">
+       <img id="item7"class="garden_image plants grass2" src="img/plants/4.png" alt="garden">
+       <img id="item8"class="garden_image plants grass3" src="img/plants/4.png" alt="garden">
+       <img id="item9"class="garden_image plants grass4" src="img/plants/5.png" alt="garden">
+       <img id="item10"class="garden_image plants grass5" src="img/plants/5.png" alt="garden">
+       <img id="item11"class="garden_image plants grass6" src="img/plants/5.png" alt="garden">
+       <img id="item12"class="garden_image deads" src="img/6.png" alt="garden">
+       <img id="item13"class="garden_image plants weed1" src="img/plants/7.png" alt="garden">
+       <img id="item14"class="garden_image plants weed2" src="img/plants/7.png" alt="garden"> 
+
+       <img id="item15" class="garden_image litter milk1" src="img/litter/1.png" alt="garden">
+       <img id="item16" class="garden_image litter milk2" src="img/litter/1.png" alt="garden">
+
+       <img id="item17" class="garden_image litter can1" src="img/litter/2.png" alt="garden">
+       <img id="item17_1" class="garden_image litter can2" src="img/litter/2.png" alt="garden">
+       <img id="item18" class="garden_image litter can3" src="img/litter/2.png" alt="garden">
+       <img id="item19" class="garden_image litter can4" src="img/litter/2.png" alt="garden">
+       <img id="item20" class="garden_image litter can5" src="img/litter/2.png" alt="garden">
+       <img id="item21" class="garden_image litter can6" src="img/litter/2.png" alt="garden">
+       <img id="item22" class="garden_image litter can7" src="img/litter/2.png" alt="garden">
+
+       <img id="item23" class="garden_image litter coffee1" src="img/litter/3.png" alt="garden">
+       <img id="item24" class="garden_image litter coffee2" src="img/litter/3.png" alt="garden">
+       <img id="item25" class="garden_image litter coffee3" src="img/litter/3.png" alt="garden">
+       <img id="item26" class="garden_image litter coffee4" src="img/litter/3.png" alt="garden">
+
+       <img id="item27" class="garden_image litter trash" src="img/litter/4.png" alt="garden">
+
+       <img id="item28" class="garden_image litter take1" src="img/litter/5.png" alt="garden">
+       <img id="item29" class="garden_image litter take2" src="img/litter/5.png" alt="garden">
+       <img id="item30" class="garden_image litter take3" src="img/litter/5.png" alt="garden">
+       <img id="item31" class="garden_image litter take4" src="img/litter/5.png" alt="garden">
+       <img id="item32" class="garden_image litter take5" src="img/litter/5.png" alt="garden">
+       <img id="item33" class="garden_image litter take6" src="img/litter/5.png" alt="garden">
+       <img id="item34" class="garden_image litter take7" src="img/litter/5.png" alt="garden">
+
+       <img id="item35" class="garden_image litter blue1" src="img/litter/6.png" alt="garden">
+       <img id="item36" class="garden_image litter blue2" src="img/litter/6.png" alt="garden">
+       <img id="item37" class="garden_image litter blue3" src="img/litter/6.png" alt="garden">
+
+       <img id="item38" class="garden_image litter cup1" src="img/litter/7.png" alt="garden">
+       <img id="item39" class="garden_image litter cup2" src="img/litter/7.png" alt="garden">
+       <img id="item40" class="garden_image litter cup3" src="img/litter/7.png" alt="garden">
+       <img id="item41" class="garden_image litter cup4" src="img/litter/7.png" alt="garden">
+       <img id="item42" class="garden_image litter cup5" src="img/litter/7.png" alt="garden">
+
+       <img id="item43" class="garden_image litter mask1" src="img/litter/8.png" alt="garden">
+       <img id="item44" class="garden_image litter mask2" src="img/litter/8.png" alt="garden">
+       <img id="item45" class="garden_image litter mask3" src="img/litter/8.png" alt="garden">
+       <img id="item46" class="garden_image litter mask4" src="img/litter/8.png" alt="garden">
+       <img id="item47" class="garden_image litter mask5" src="img/litter/8.png" alt="garden">
+       <img id="item48" class="garden_image litter mask6" src="img/litter/8.png" alt="garden">
+
+       <img id="item49" class="garden_image litter bag1" src="img/litter/9.png" alt="garden">
+       <img id="item50" class="garden_image litter bag2" src="img/litter/9.png" alt="garden">
+       <img id="item51" class="garden_image litter bag3" src="img/litter/9.png" alt="garden">
+       <img id="item52" class="garden_image litter bag4" src="img/litter/9.png" alt="garden">
+
+       <img id="item53" class="garden_image litter pepsi" src="img/litter/10.png" alt="garden">
+       <img id="item54" class="garden_image litter can1_last" src="img/litter/11.png" alt="garden">
+       <img id="item55" class="garden_image litter layer" src="img/litter/12.png" alt="garden">
+
+       <img id="item56" class="garden_image litter pile1" src="img/litter/13.png" alt="garden">
+       <img id="item57" class="garden_image litter pile2" src="img/litter/13.png" alt="garden">
+       <img id="item58" class="garden_image litter pile3" src="img/litter/13.png" alt="garden">
+       <img id="item59" class="garden_image litter pile4" src="img/litter/13.png" alt="garden">
+
+      <img id="item60" class="garden_image litter pizza" src="img/litter/14.png" alt="garden">
+
+      <img id="item61" class="garden_image litter pop1" src="img/litter/15.png" alt="garden">
+      <img id="item62" class="garden_image litter pop2" src="img/litter/15.png" alt="garden">
+      <img id="item63" class="garden_image litter pop3" src="img/litter/15.png" alt="garden">
+      <img id="item64" class="garden_image litter pop4" src="img/litter/15.png" alt="garden">
+
+      <img id="item65" class="garden_image litter layer2" src="img/litter/16.png" alt="garden">
+      <img id="item66" class="garden_image litter srub" src="img/litter/17.png" alt="garden">
+
+      <img id="item67" class="garden_image litter bottle1" src="img/litter/18.png" alt="garden">
+      <img id="item68" class="garden_image litter bottle2" src="img/litter/18.png" alt="garden">
+      <img id="item69" class="garden_image litter bottle3" src="img/litter/18.png" alt="garden">
+      <img id="item70" class="garden_image litter bottle4" src="img/litter/18.png" alt="garden">
+      <img id="item71" class="garden_image litter bottle5" src="img/litter/18.png" alt="garden">
+      <img id="item72" class="garden_image litter trash_pile2" src="img/litter/19.png" alt="garden"> 
+
+       <img id="item73" class="garden_image weeds dund1" src="img/weed/1.png" alt="garden">
+       <img id="item74" class="garden_image weeds dund2" src="img/weed/1.png" alt="garden">
+
+       <img id="item75" class="garden_image weeds nutsedge1" src="img/weed/2.png" alt="garden">
+       <img id="item76" class="garden_image weeds nutsedge2" src="img/weed/2.png" alt="garden">
+       <img id="item77" class="garden_image weeds nutsedge3" src="img/weed/2.png" alt="garden">
+       <img id="item78" class="garden_image weeds nutsedge4" src="img/weed/2.png" alt="garden">
+       <img id="item79" class="garden_image weeds nutsedge5" src="img/weed/2.png" alt="garden">
+
+       <img id="item80" class="garden_image weeds garlic1" src="img/weed/3.png" alt="garden">
+       <img id="item81" class="garden_image weeds garlic2" src="img/weed/3.png" alt="garden">
+       <img id="item82" class="garden_image weeds garlic3" src="img/weed/3.png" alt="garden">
+       <img id="item83" class="garden_image weeds garlic4" src="img/weed/3.png" alt="garden">
+       <img id="item84" class="garden_image weeds garlic5" src="img/weed/3.png" alt="garden">
+       <img id="item85" class="garden_image weeds garlic6" src="img/weed/3.png" alt="garden">
+       <img id="item86" class="garden_image weeds garlic7" src="img/weed/3.png" alt="garden">
+
+       <img id="item87" class="garden_image weeds plantain1" src="img/weed/4.png" alt="garden">
+       <img id="item88" class="garden_image weeds plantain2" src="img/weed/4.png" alt="garden">
+       <img id="item89" class="garden_image weeds plantain3" src="img/weed/4.png" alt="garden">
+       <img id="item90" class="garden_image weeds plantain4" src="img/weed/4.png" alt="garden">
+       <img id="item91" class="garden_image weeds plantain5" src="img/weed/4.png" alt="garden">
+       <img id="item92" class="garden_image weeds plantain6" src="img/weed/4.png" alt="garden">
+       <img id="item93" class="garden_image weeds plantain7" src="img/weed/4.png" alt="garden">
+       <img id="item94" class="garden_image weeds plantain8" src="img/weed/4.png" alt="garden">
+
+       <img id="item95" class="garden_image weeds pineapple1" src="img/weed/5.png" alt="garden">
+       <img id="item96" class="garden_image weeds pineapple2" src="img/weed/5.png" alt="garden">
+       <img id="item97" class="garden_image weeds pineapple3" src="img/weed/5.png" alt="garden">
+       <img id="item98" class="garden_image weeds pineapple4" src="img/weed/5.png" alt="garden">
+       <img id="item99" class="garden_image weeds pineapple5" src="img/weed/5.png" alt="garden">
+
+       <img id="item100" class="garden_image weeds prostrate1" src="img/weed/6.png" alt="garden">
+       <img id="item101" class="garden_image weeds prostrate2" src="img/weed/6.png" alt="garden">
+       <img id="item102" class="garden_image weeds prostrate3" src="img/weed/6.png" alt="garden">
+
+       <img id="item103" class="garden_image weeds poison2_1" src="img/weed/7.png" alt="garden">
+       <img id="item104" class="garden_image weeds poison2_2" src="img/weed/7.png" alt="garden">
+       <img id="item105" class="garden_image weeds poison2_3" src="img/weed/7.png" alt="garden">
+       <img id="item106" class="garden_image weeds poison2_4" src="img/weed/7.png" alt="garden">
+
+       <img id="item107" class="garden_image weeds poison1_1" src="img/weed/8.png" alt="garden">
+       <img id="item108" class="garden_image weeds poison1_2" src="img/weed/8.png" alt="garden">
+       <img id="item109" class="garden_image weeds poison1_3" src="img/weed/8.png" alt="garden">
+
+       <img id="item110" class="garden_image weeds nightshed21" src="img/weed/9.png" alt="garden">
+
+       <img id="item111" class="garden_image weeds nightshed1" src="img/weed/10.png" alt="garden">
+       <img id="item112" class="garden_image weeds nightshed2" src="img/weed/10.png" alt="garden">
+       <img id="item113" class="garden_image weeds nightshed3" src="img/weed/10.png" alt="garden">
+       <img id="item114" class="garden_image weeds nightshed4" src="img/weed/10.png" alt="garden">
+       <img id="item115" class="garden_image weeds nightshed5" src="img/weed/10.png" alt="garden">
+
+       <img id="item116" class="garden_image weeds ragweed1" src="img/weed/11.png" alt="garden">
+       <img id="item117" class="garden_image weeds ragweed2" src="img/weed/11.png" alt="garden">
+       <img id="item118" class="garden_image weeds ragweed3" src="img/weed/11.png" alt="garden">
+       <img id="item119" class="garden_image weeds ragweed4" src="img/weed/11.png" alt="garden">
+
+       <img id="item120" class="garden_image weeds grabgrass1" src="img/weed/12.png" alt="garden">
+       <img id="item121" class="garden_image weeds grabgrass2" src="img/weed/12.png" alt="garden">
+       <img id="item122" class="garden_image weeds grabgrass3" src="img/weed/12.png" alt="garden">
+       <img id="item123" class="garden_image weeds grabgrass4" src="img/weed/12.png" alt="garden">
+       <img id="item124" class="garden_image weeds grabgrass5" src="img/weed/12.png" alt="garden">
+       <img id="item125" class="garden_image weeds grabgrass6" src="img/weed/12.png" alt="garden">
+       <img id="item126" class="garden_image weeds grabgrass7" src="img/weed/12.png" alt="garden">
+       <img id="item127" class="garden_image weeds grabgrass8" src="img/weed/12.png" alt="garden">
+
+       <img id="item128" class="garden_image weeds knotweed1" src="img/weed/13.png" alt="garden">
+       <img id="item129" class="garden_image weeds knotweed2" src="img/weed/13.png" alt="garden">
+
+       <img id="item130" class="garden_image weeds shepherd1" src="img/weed/14.png" alt="garden">
+       <img id="item131" class="garden_image weeds shepherd2" src="img/weed/14.png" alt="garden">
+       <img id="item132" class="garden_image weeds shepherd3" src="img/weed/14.png" alt="garden">
+       <img id="item133" class="garden_image weeds shepherd4" src="img/weed/14.png" alt="garden">
+       <img id="item134" class="garden_image weeds shepherd5" src="img/weed/14.png" alt="garden">
+       <img id="item135" class="garden_image weeds shepherd6" src="img/weed/14.png" alt="garden">
+
+       <img id="item136" class="garden_image weeds smartweeder1" src="img/weed/15.png" alt="garden">
+       <img id="item137" class="garden_image weeds smartweeder2" src="img/weed/15.png" alt="garden">
+       <img id="item138" class="garden_image weeds smartweeder3" src="img/weed/15.png" alt="garden">
+       <img id="item139" class="garden_image weeds smartweeder4" src="img/weed/15.png" alt="garden">
+       <img id="item140" class="garden_image weeds smartweeder5" src="img/weed/15.png" alt="garden">
+       <img id="item141" class="garden_image weeds smartweeder6" src="img/weed/15.png" alt="garden">
+       <img id="item142" class="garden_image weeds smartweeder7" src="img/weed/15.png" alt="garden">
+
+       <img id="item143" class="garden_image weeds heaven1" src="img/weed/16.png" alt="garden">
+       <img id="item144" class="garden_image weeds heaven2" src="img/weed/16.png" alt="garden">
+       <img id="item145" class="garden_image weeds heaven3" src="img/weed/16.png" alt="garden">
+       <img id="item146" class="garden_image weeds heaven4" src="img/weed/16.png" alt="garden">
+
+       <img id="item147" class="garden_image weeds yarrow1" src="img/weed/17.png" alt="garden">
+       <img id="item148" class="garden_image weeds yarrow2" src="img/weed/17.png" alt="garden">
+       <img id="item149" class="garden_image weeds yarrow3" src="img/weed/17.png" alt="garden">
+       <img id="item150" class="garden_image weeds yarrow4" src="img/weed/17.png" alt="garden">
+       <img id="item151" class="garden_image weeds yarrow5" src="img/weed/17.png" alt="garden"> 
+
+       <img id="item152" class="garden_image weeds groundweed1" src="img/weed/18.png" alt="garden">
+       <img id="item153" class="garden_image weeds groundweed2" src="img/weed/18.png" alt="garden">
+       <img id="item154" class="garden_image weeds groundweed3" src="img/weed/18.png" alt="garden">
+       <img id="item155" class="garden_image weeds groundweed4" src="img/weed/18.png" alt="garden">
+
+       <img id="item156" class="garden_image weeds bundweed1" src="img/weed/19.png" alt="garden">
+       <img id="item157" class="garden_image weeds bundweed2" src="img/weed/19.png" alt="garden">
+       <img id="item158" class="garden_image weeds bundweed3" src="img/weed/19.png" alt="garden">
+       <img id="item159" class="garden_image weeds bundweed4" src="img/weed/19.png" alt="garden">
+       <img id="item160" class="garden_image weeds bundweed5" src="img/weed/19.png" alt="garden">
+
+       <img id="item161" class="garden_image weeds crown1" src="img/weed/20.png" alt="garden">
+       <img id="item162" class="garden_image weeds crown2" src="img/weed/20.png" alt="garden">
+       <img id="item163" class="garden_image weeds crown3" src="img/weed/20.png" alt="garden">
+       <img id="item164" class="garden_image weeds crown4" src="img/weed/20.png" alt="garden">
+
+       <img id="item165" class="garden_image weeds clover3_1" src="img/weed/21.png" alt="garden">
+       <img id="item166" class="garden_image weeds clover3_2" src="img/weed/21.png" alt="garden">
+       <img id="item167" class="garden_image weeds clover3_3" src="img/weed/21.png" alt="garden">
+       <img id="item168" class="garden_image weeds clover3_4" src="img/weed/21.png" alt="garden">
+
+       <img id="item169" class="garden_image weeds clover2_1" src="img/weed/22.png" alt="garden">
+       <img id="item170" class="garden_image weeds clover2_2" src="img/weed/22.png" alt="garden">
+       <img id="item171" class="garden_image weeds clover2_3" src="img/weed/22.png" alt="garden">
+       <img id="item172" class="garden_image weeds clover2_4" src="img/weed/22.png" alt="garden">
+       <img id="item173" class="garden_image weeds clover2_5" src="img/weed/22.png" alt="garden">
+       <img id="item174" class="garden_image weeds clover2_6" src="img/weed/22.png" alt="garden">
+
+       <img id="item175" class="garden_image weeds clover1_1" src="img/weed/23.png" alt="garden">
+       <img id="item176" class="garden_image weeds clover1_2" src="img/weed/23.png" alt="garden">
+       <img id="item177" class="garden_image weeds clover1_3" src="img/weed/23.png" alt="garden">
+       <img id="item178" class="garden_image weeds clover1_4" src="img/weed/23.png" alt="garden">
+       <img id="item179" class="garden_image weeds clover1_5" src="img/weed/23.png" alt="garden">
+
+       <img id="item180" class="garden_image weeds purple1" src="img/weed/24.png" alt="garden">
+       <img id="item181" class="garden_image weeds purple2" src="img/weed/24.png" alt="garden">
+       <img id="item182" class="garden_image weeds purple3" src="img/weed/24.png" alt="garden">
+       <img id="item183" class="garden_image weeds purple4" src="img/weed/24.png" alt="garden">
+       <img id="item184" class="garden_image weeds purple5" src="img/weed/24.png" alt="garden">
+
+       <img id="item185" class="garden_image weeds lambs1" src="img/weed/25.png" alt="garden">
+       <img id="item186" class="garden_image weeds lambs2" src="img/weed/25.png" alt="garden">
+       <img id="item187" class="garden_image weeds lambs3" src="img/weed/25.png" alt="garden">
+       <img id="item188" class="garden_image weeds lambs4" src="img/weed/25.png" alt="garden">
+
+       <img id="item189" class="garden_image weeds mustard1" src="img/weed/26.png" alt="garden">
+       <img id="item190" class="garden_image weeds mustard2" src="img/weed/26.png" alt="garden">
+       <img id="item191" class="garden_image weeds mustard3" src="img/weed/26.png" alt="garden">
+       <img id="item192" class="garden_image weeds mustard4" src="img/weed/26.png" alt="garden">
+       <img id="item193" class="garden_image weeds mustard5" src="img/weed/26.png" alt="garden">
+
+       <img id="item194" class="garden_image weeds mullein1" src="img/weed/27.png" alt="garden">
+       <img id="item195" class="garden_image weeds mullein2" src="img/weed/27.png" alt="garden">
+       <img id="item196" class="garden_image weeds mullein3" src="img/weed/27.png" alt="garden">
+       <img id="item197" class="garden_image weeds mullein4" src="img/weed/27.png" alt="garden">
+
+       <img id="item198" class="garden_image weeds mugwort1" src="img/weed/28.png" alt="garden">
+       <img id="item199" class="garden_image weeds mugwort2" src="img/weed/28.png" alt="garden">
+       <img id="item200" class="garden_image weeds mugwort3" src="img/weed/28.png" alt="garden">
+       <img id="item201" class="garden_image weeds mugwort4" src="img/weed/28.png" alt="garden">
+       <img id="item202" class="garden_image weeds mugwort5" src="img/weed/28.png" alt="garden"> 
+       <img id="item203" class="garden_image weeds mugwort6" src="img/weed/28.png" alt="garden">
+       <img id="item204" class="garden_image weeds mugwort7" src="img/weed/28.png" alt="garden"> 
+       <img id="item205" class="garden_image weeds mugwort8" src="img/weed/28.png" alt="garden">
+       <img id="item206" class="garden_image weeds mugwort9" src="img/weed/28.png" alt="garden">
+       <img id="item207" class="garden_image weeds mugwort10" src="img/weed/28.png" alt="garden"> 
+       <img id="item208" class="garden_image weeds mugwort11" src="img/weed/28.png" alt="garden">
+
+       <img id="item209" class="garden_image weeds clover1" src="img/weed/29.png" alt="garden">
+       <img id="item210" class="garden_image weeds clover2" src="img/weed/29.png" alt="garden">
+       <img id="item211" class="garden_image weeds clover3" src="img/weed/29.png" alt="garden">
+       <img id="item212" class="garden_image weeds clover4" src="img/weed/29.png" alt="garden">
+       <img id="item213" class="garden_image weeds clover5" src="img/weed/29.png" alt="garden"> 
+       <img id="item214" class="garden_image weeds clover6" src="img/weed/29.png" alt="garden">
+       <img id="item215" class="garden_image weeds clover7" src="img/weed/29.png" alt="garden"> 
+       <img id="item216" class="garden_image weeds clover8" src="img/weed/29.png" alt="garden">
+
+       <img id="item217" class="garden_image weeds sorrel1" src="img/weed/30.png" alt="garden">
+       <img id="item218" class="garden_image weeds sorrel2" src="img/weed/30.png" alt="garden">
+       <img id="item219" class="garden_image weeds sorrel3" src="img/weed/30.png" alt="garden">
+       <img id="item220" class="garden_image weeds sorrel4" src="img/weed/30.png" alt="garden">
+       <img id="item221" class="garden_image weeds sorrel5" src="img/weed/30.png" alt="garden"> 
+       <img id="item222" class="garden_image weeds sorrel6" src="img/weed/30.png" alt="garden">
+
+       <img id="item223" class="garden_image weeds thistle1" src="img/weed/31.png" alt="garden">
+       <img id="item224" class="garden_image weeds thistle2" src="img/weed/31.png" alt="garden">
+       <img id="item225" class="garden_image weeds thistle3" src="img/weed/31.png" alt="garden">
+       <img id="item226" class="garden_image weeds thistle4" src="img/weed/31.png" alt="garden">
+       <img id="item227" class="garden_image weeds thistle5" src="img/weed/31.png" alt="garden"> 
+
+       <img id="item228" class="garden_image weeds dead1" src="img/weed/32.png" alt="garden">
+       <img id="item229" class="garden_image weeds dead2" src="img/weed/32.png" alt="garden">
+       <img id="item230" class="garden_image weeds dead3" src="img/weed/32.png" alt="garden">
+       <img id="item231" class="garden_image weeds dead4" src="img/weed/32.png" alt="garden">
+       <img id="item232" class="garden_image weeds dead5" src="img/weed/32.png" alt="garden">
+       <img id="item233" class="garden_image weeds dead6" src="img/weed/32.png" alt="garden">
+       <img id="item234" class="garden_image weeds dead7" src="img/weed/32.png" alt="garden">
+       <img id="item235" class="garden_image weeds dead8" src="img/weed/32.png" alt="garden">
+       
+       <img id="item236" class="garden_image weeds violet1" src="img/weed/33.png" alt="garden">
+       <img id="item237" class="garden_image weeds violet2" src="img/weed/33.png" alt="garden">
+       <img id="item238" class="garden_image weeds violet3" src="img/weed/33.png" alt="garden">
+       <img id="item239" class="garden_image weeds violet4" src="img/weed/33.png" alt="garden">
+       <img id="item240" class="garden_image weeds violet5" src="img/weed/33.png" alt="garden">
+       <img id="item241" class="garden_image weeds violet6" src="img/weed/33.png" alt="garden">
+       <img id="item242" class="garden_image weeds violet7" src="img/weed/33.png" alt="garden">
+       <img id="item243" class="garden_image weeds violet8" src="img/weed/33.png" alt="garden">
+       
+       <img id="item244" class="garden_image weeds purslaine1" src="img/weed/34.png" alt="garden">
+       <img id="item245" class="garden_image weeds purslaine2" src="img/weed/34.png" alt="garden">
+       <img id="item246" class="garden_image weeds purslaine3" src="img/weed/34.png" alt="garden">
+       <img id="item247" class="garden_image weeds purslaine4" src="img/weed/34.png" alt="garden">
+       <img id="item248" class="garden_image weeds purslaine5" src="img/weed/34.png" alt="garden">
+       <img id="item249" class="garden_image weeds purslaine6" src="img/weed/34.png" alt="garden">    
+
+       <img id="item250" class="garden_image weeds mallow1" src="img/weed/35.png" alt="garden">
+       <img id="item251" class="garden_image weeds mallow2" src="img/weed/35.png" alt="garden">
+       <img id="item252" class="garden_image weeds mallow3" src="img/weed/35.png" alt="garden">
+       <img id="item253" class="garden_image weeds mallow4" src="img/weed/35.png" alt="garden">
+       <img id="item254" class="garden_image weeds mallow5" src="img/weed/35.png" alt="garden">
+       <img id="item255" class="garden_image weeds mallow6" src="img/weed/35.png" alt="garden"> 
+       <img id="item256" class="garden_image weeds broadleaf1" src="img/weed/36.png" alt="garden">
+       <img id="item257" class="garden_image weeds broadleaf2" src="img/weed/36.png" alt="garden">
+       <img id="item258" class="garden_image weeds broadleaf3" src="img/weed/36.png" alt="garden">
+       <img id="item259" class="garden_image weeds broadleaf4" src="img/weed/36.png" alt="garden">
+       <img id="item260" class="garden_image weeds broadleaf5" src="img/weed/36.png" alt="garden">
+       <img id="item261" class="garden_image weeds broadleaf6" src="img/weed/36.png" alt="garden">
+       <img id="item262" class="garden_image weeds broadleaf7" src="img/weed/36.png" alt="garden">  
+
+   </div>
+
+
+
+
+    </div>
+  <div id="overlay"></div>
+  <div id="aboutModal">
+    <div class="modal-dialog">
+      <div class="modal-content">    
+        <div class="modal-header">
+          <button type="button" class="close" id="close_modal">×</button>
+          <h4 class="modal-title"><span class="blue_bg">About</span></h4>
+        </div>     
+        <div class="modal-body">
+      <p class="about_text"><span class="blue_bg">Impression</span> is a time sensitive, web-based work about the natural transition of space, both online and offline. Impressions are both physical, marks or indentations made in a space and abstract, sensations or perceptions. In web analytics terms, an impression refers to the number of times a piece of content is seen (views). </p>
+          
+       <p class="about_text"><span class="blue_bg">Impression</span> changes over the course of its life, starting off as something resembling an overgrown, empty lot or abandoned webpage, full of broken images, trash, and weeds (invasive plants). <span class="blue_bg">Visitors are invited to take one of four actions: pull a weed, plant a flower, pick up trash or litter.</span> As time goes by and visitor counts rise, the page will change, both from direct actions taken by visitors and indirect changes programmed into the website’s code. As the webpage or empty lot, gets nurtured by clicks and views, it becomes functional, broken images slowly reappear to show a garden.</p>
+         
+       <p class="about_text"> All of this expansion and forward movement takes the webpage into its next natural progression, for profit. The garden becomes a storefront. The invasive plants that once littered the empty webpage are now being sold for exorbitant prices. What occurs naturally eventually becomes commodified. The cycle continues indefinitely, as the website resets and moves in and out of its various stages of <span class="blue_bg">decline and optimization.</span></p>
+
+        </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">       
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/garden.js"></script> 
+      <script src="js/date.js.js"></script> 
+     <script src="js/modal.js"></script>  
+	</body>
+</html>

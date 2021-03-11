@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+    <style type="text/css">
+                  #preloader{width:100%;height:100%;min-height:100vh;margin:0;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-image:url(/img/bg_green.jpg);background-size:contain;background-repeat:repeat;z-index:1600;position:fixed;overflow:hidden}.wrapper{position:relative;width:300px;height:300px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.wrapper .loader-circle{width:60%;height:60%;border-radius:50%;border:30px solid transparent;border-left-color:#fff;-webkit-animation:preloader .9s ease-in-out alternate infinite;animation:preloader .9s ease-in-out alternate infinite}.wrapper .loader-bottom{position:absolute;width:100%;height:50%;top:50%;text-align:center;color:#fff;font-weight:700;-webkit-animation:progress .45s linear alternate infinite;animation:progress .45s linear alternate infinite}@-webkit-keyframes preloader{0%{-webkit-transform:rotate(-35deg);transform:rotate(-35deg)}18%{border-width:18px}50%{border-width:4px}82%{border-width:18px}100%{-webkit-transform:rotate(215deg);transform:rotate(215deg)}}@keyframes preloader{0%{-webkit-transform:rotate(-35deg);transform:rotate(-35deg)}18%{border-width:18px}50%{border-width:4px}82%{border-width:18px}100%{-webkit-transform:rotate(215deg);transform:rotate(215deg)}}@-webkit-keyframes progress{0%{color:#fff}100%{color:rgba(255,255,255,0.5)}}@keyframes progress{0%{color:#fff}100%{color:rgba(255,255,255,0.5)}}
+            </style>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Impression</title>
+	</head>
+	<body class="green">
+
+          <div id="preloader">
+            <div class="wrapper">
+              <div class="loader-circle"></div>
+              <div class="loader-bottom">LOADING</div>
+            </div>
+      </div>
+        <div class="container">
+      <div id="button_block_container" class="container menu_container relative_menu">
+        <p id="about_us" class="btn btn-primary">?</p>
+                <p class="menu_button select">Pick one <img class="menu_arrow" src="img/arrow.png" alt="garden"></p>           
+                <p id="plant" class="menu_button">Plant a flower</p>            
+                <p id="litter_button" class="menu_button">Litter</p>
+           </div>
+    </div>
+
+    <div id="garden_field" class="container">
+		<img class="initial_state" src="img/state1.png" alt="garden">
+  </div>
+    <div id="garden_field"  class="container">
+     
+    </div>
+  <div id="overlay"></div>
+  <div id="aboutModal">
+    <div class="modal-dialog">
+      <div class="modal-content">    
+        <div class="modal-header">
+          <button type="button" class="close" id="close_modal">×</button>
+          <h4 class="modal-title"><span class="blue_bg title">About</span></h4>
+        </div>     
+        <div class="modal-body">
+      <p class="about_text"><span class="blue_bg">Impression</span> is a time sensitive, web-based work about the natural transition of space, both online and offline. Impressions are both physical, marks or indentations made in a space and abstract, sensations or perceptions. In web analytics terms, an impression refers to the number of times a piece of content is seen (views). </p>
+          
+       <p class="about_text"><span class="blue_bg">Impression</span> changes over the course of its life, starting off as something resembling an overgrown, empty lot or abandoned webpage, full of broken images, trash, and weeds (invasive plants). <span class="blue_bg">Visitors are invited to take one of four actions: pull a weed, plant a flower, pick up trash or litter.</span> As time goes by and visitor counts rise, the page will change, both from direct actions taken by visitors and indirect changes programmed into the website’s code. As the webpage or empty lot, gets nurtured by clicks and views, it becomes functional, broken images slowly reappear to show a garden.</p>
+         
+       <p class="about_text"> All of this expansion and forward movement takes the webpage into its next natural progression, for profit. The garden becomes a storefront. The invasive plants that once littered the empty webpage are now being sold for exorbitant prices. What occurs naturally eventually becomes commodified. The cycle continues indefinitely, as the website resets and moves in and out of its various stages of <span class="blue_bg">decline and optimization.</span></p>
+
+        </div>
+      <!-- Футер модального окна -->
+      <div class="modal-footer">       
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/part_func.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/modal.js"></script>    		
+	</body>
+</html>
