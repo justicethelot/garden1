@@ -14,7 +14,7 @@ const room = 'gardeners';
 let username = Math.random().toString(36).substring(7);
 let file = 'fullgarden';
 let array_index = 1;
-if(document.location.href == 'https://cleangarden.herokuapp.com/info.html'){
+if(document.location.href == 'https://finalgarden.herokuapp.com/info.html'){
   file = 'info';
   array_index = 2;
 }

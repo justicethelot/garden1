@@ -11,18 +11,18 @@ let hour = 3600000;
 setInterval(getactualDate, hour); 
 
 if(current_date > piecefull_garden_date){	
-	if(document.location.href != 'https://cleangarden.herokuapp.com/garden.html'){
-		window.location.href = 'https://cleangarden.herokuapp.com/garden.html';
+	if(document.location.href != 'https://finalgarden.herokuapp.com/garden.html'){
+		window.location.href = 'https://finalgarden.herokuapp.com/garden.html';
 	 }
 }
 if(current_date > adv_garden_date ){
-	if(document.location.href != 'https://cleangarden.herokuapp.com/info.html'){
-		window.location.href = 'https://cleangarden.herokuapp.com/info.html';
+	if(document.location.href != 'https://finalgarden.herokuapp.com/info.html'){
+		window.location.href = 'https://finalgarden.herokuapp.com/info.html';
 	 }
 }
 if(current_date>= final_garden_date){
-	if(document.location.href != 'https://cleangarden.herokuapp.com/shop.html'){
-		window.location.href = 'https://cleangarden.herokuapp.com/shop.html';
+	if(document.location.href != 'https://finalgarden.herokuapp.com/shop.html'){
+		window.location.href = 'https://finalgarden.herokuapp.com/shop.html';
 	 }
 } 
 function getactualDate(){
